@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  gap: 7px;
+  padding: 15px;
+  color: white;
+}
+.sidebar {
+  grid-row: 1/-1;
+  background-color: #7e18ff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.box {
+  background-color: #d9d9d9;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.header {
+  grid-column: 2/-1;
+  grid-row: 1/-7;
+}
+.state_one {
+  grid-column: 2/5;
+}
+.state_two {
+  grid-column: 5/8;
+}
+.state_three {
+  grid-column: 8/11;
+}
+.state_four {
+  grid-column: 11/-1;
+}
+.chart_one {
+  grid-column: 2/8;
+  grid-row: 4/6;
+}
+.chart_two {
+  grid-column: 8/-1;
+  grid-row: 4/6;
+}
+.overview {
+  grid-column: 2/11;
+  grid-row: 6/9;
+}
+.reminder {
+  grid-column: 11/-1;
+  grid-row: 6/9;
+}
